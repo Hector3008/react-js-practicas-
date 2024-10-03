@@ -1,41 +1,43 @@
- - REACT es una librería que se remonta a facebook y que carga dinámicamente componentes del html sin necesidad de recargar toda la página para que se actualice.
+--CLASE 1:--
 
- - REACT también permite modularizar el código para que usar plantillas que se repliquen en el código final. Es decir, trabaja con componentes. Y estos componentes van interactuando entre sí, según la información que le corresponda.
+  - REACT es una librería que se remonta a facebook y que carga dinámicamente componentes del html sin necesidad de recargar toda la página para que se actualice.
 
- - REACT utiliza un enfoque declarativo y no imperativo: habla ordenando según lo que se quiere lograr y no en el cómo. Es decir, el imperativo detalla paso a paso las acciones a realizar para lograr el propósito. Mientras que el enfoque declarativo "declara" solamente el propósito.
+  - REACT también permite modularizar el código para que usar plantillas que se repliquen en el código final. Es decir, trabaja con componentes. Y estos componentes van interactuando entre sí, según la información que le corresponda.
 
- ejemplo:
-  //generar un array con números pares
+  - REACT utiliza un enfoque declarativo y no imperativo: habla ordenando según lo que se quiere lograr y no en el cómo. Es decir, el imperativo detalla paso a paso las acciones a realizar para lograr el propósito. Mientras que el enfoque declarativo "declara" solamente el propósito.
 
-    //modo imperativo: 
+  ejemplo:
+    //generar un array con números pares
 
-      const array = []
-      for(let i = 0; i<=10; i++){
-        if(i%2==0) {
-          array.push(i)
+      //modo imperativo: 
+
+        const array = []
+        for(let i = 0; i<=10; i++){
+          if(i%2==0) {
+            array.push(i)
+          }
         }
-      }
-    //modo declarativo:
+      //modo declarativo:
 
-      const numeros = [1,2,3,4,5,6,7,8,9,10] 
-      const pares = numeros.filter(num => num % 2 == 0)
+        const numeros = [1,2,3,4,5,6,7,8,9,10] 
+        const pares = numeros.filter(num => num % 2 == 0)
 
-    //funciones:
+      //funciones:
 
-      //declaradas:
-        function suma(num1; num2){
-          let resultado = num1 + num2
-          return resultado
-        }
-        //(la función se invoca)
-        suma(4;5)
+        //declaradas:
+          function suma(num1; num2){
+            let resultado = num1 + num2
+            return resultado
+          }
+          //(la función se invoca)
+          suma(4;5)
 
-      //expresadas:
-        //(anonima)
-          const suma = function(num1;num2)=>{return num1+num2}
-        //(flecha):
-          const suma = (num1;num2)=>{return num1+num2}
+        //expresadas:
+          //(anonima)
+            const suma = function(num1;num2)=>{return num1+num2}
+          //(flecha):
+            const suma = (num1;num2)=>{return num1+num2}
 
-    
+      
 
 
